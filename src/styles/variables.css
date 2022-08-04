@@ -1,0 +1,10 @@
+:root {
+  --padding-xl: 2rem;
+  --padding-l: 1rem;
+  --padding-m: 0.5rem;
+  --padding-s: 0.3rem;
+  --padding-xs: 0.2rem;
+
+  --accent-color: #379fff;
+  --secondary-text-color: #3c3c3c;
+}

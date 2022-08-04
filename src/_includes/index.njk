@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <div class="bg-image"></div>
+  <!-- header with menu -->
+  <header class="head">
+    <div class="head__menu-wrapper">
+    <a href="https://codeartstore.com" class="head__logo">CodeArtStore</a>
+    <nav class="head__nav">
+      <a href="https://codeartstore.com/" class="head__nav-item">Блог</a>
+      <a href="https://codeartstore.com/" class="head__nav-item">Как заказать</a>
+      <a href="https://codeartstore.com/shop" class="head__nav-item">Магазин</a>
+    </nav>
+  </div>
+  </header>
+
+  <!-- main block with background carousel -->
+
+  <section class="main-info">
+    <div class="main-info__content" data-aos="fade-up" data-aos-duration="1000">
+      <h1>Рисунки в стиле Generative Art</h1>
+      <p>Изготовление постеров и портретов в необычном стиле на заказ</p>
+    </div>
+  </section>
+
+  <!-- block with image and text -->
+
+  <section class="personal-info">
+    <div class="personal-info__main">
+      <!-- <div class="personal-info__image-container">
+        <img src="images/me.png" alt="me">
+      </div> -->
+      <div class="personal-info__statistic">
+        <div class="personal-info__statistic-item" data-aos="fade-right">
+          <span class="personal-info__statistic-value">20+</span>
+          <span class="personal-info__statistic-text">вариантов исполнения</span>
+        </div>
+        <div class="personal-info__statistic-item" data-aos="fade-left">
+          <span class="personal-info__statistic-value">3+</span>
+          <span class="personal-info__statistic-text">лет опыта работы с плоттерами</span>
+        </div>
+        <div class="personal-info__statistic-item" data-aos="fade-right">
+          <span class="personal-info__statistic-value">3 - 5 дней</span>
+          <span class="personal-info__statistic-text">время изготовления постера</span>
+        </div>
+        <div class="personal-info__statistic-item" data-aos="fade-left">
+          <span class="personal-info__statistic-value">146%</span>
+          <span class="personal-info__statistic-text">оригинальности и уникальности работы</span>
+        </div>
+      </div>
+      <div class="personal-info__description">
+        <p class="personal-info__text">
+          Привет! Меня зовут Евгений и вот уже несколько лет я увлекаюсь genertive art.
+          Я пишу код, который преобразует изображения в набор линий или сам генерирует какой нибудь рисунок. Затем я переношу его на бумагу при помощи плоттеров, которые я собрал сам. 
+        </p>
+        <div class="personal-info__social-icons">
+          <a href="https://instagram.com/drawbot_art" class="personal-info__social-link" target="_blank"><img src="icons/inst.svg" />drawbot_art</a>
+          <a href="https://t.me/five_a_m" class="personal-info__social-link" target="_blank"><img src="icons/telegram.svg" />Sleepless Tech</a>
+          <a href="https://twitter.com/drawbot_art" class="personal-info__social-link" target="_blank"><img src="icons/twitter.svg" />drawbot_art</a>
+          <a href="https://t.me/jem_jem" class="personal-info__social-link" target="_blank"><img src="icons/telegram.svg" />Jem Jem</a>
+          <a href="https://codeartstore.com" class="personal-info__social-link" target="_blank"><img src="icons/globe.svg" />CodeArtStore</a>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <section class="video-container">
+    <div class="video">
+      <a class="video__link" href="https://youtu.be/{{settings.embedVideoId}}">
+          <picture>
+              <source srcset="{{settings.youtubeImgSrcWebp}}" type="image/webp">
+              <img class="video__media" src="{{settings.youtubeImgSrc}}" alt="1test">
+          </picture>
+      </a>
+      <button class="video__button" aria-label="Запустить видео">
+          <svg width="68" height="48" viewBox="0 0 68 48"><path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path><path class="video__button-icon" d="M 45,24 27,14 27,34"></path></svg>
+      </button>
+      </div>
+  </section>
+
+  <section class="order-info">
+    <div class="order-info__text">
+      <h2 class="bordered-heading">Как сделать заказ 🤔</h2>
+      <p>
+        Возможно вы хотите сделать подарок друзьям или близким, или украсить интерьер своей квартиры. Давайте я Вам помогу.
+      </p>
+    </div>
+    <div class="order-info__steps" data-aos="zoom-in-down">
+      <div class="order-info__step">
+        <img src="" alt="" class="order-info__step-icon">
+        <span class="order-info__step-title">Выберите фото</span>
+        <span class="order-info__step-text">Если это портрет, желательно чтобы черты лица были хорошо видны. Чем больше разрешение фотографии, тем лучше</span>
+      </div>
+      <div class="order-info__step">
+        <img src="" alt="" class="order-info__step-icon">
+        <span class="order-info__step-title">Выберите стиль</span>
+        <span class="order-info__step-text">Ниже вы можете ознакомиться с вариантами исполнения. Если вы не знаете какой выбрать, я Вам помогу и предложу варианты</span>
+      </div>
+      <div class="order-info__step">
+        <img src="" alt="" class="order-info__step-icon">
+        <span class="order-info__step-title">Отправьте фото</span>
+        <span class="order-info__step-text">А также свои пожелания по исполнению и доставке заказа. Обязательно укажите контакты для обратной связи, чтобы мы обсудили детали</span>
+      </div>
+      <div class="order-info__step">
+        <img src="" alt="" class="order-info__step-icon">
+        <span class="order-info__step-title">Получите заказ</span>
+        <span class="order-info__step-text">Вы можете произвести оплту после изготовления постера. Затем я передам его вам одним из возможных способов доствки</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- block with styles selector -->
+
+  <section class="styles">
+    <div class="styles__radio">
+      <h2 class="bordered-heading">Стили исполнения</h2>
+      <form id="styles-form">
+        {% for style in settings.styles %}
+          <input class="radio-button" type="radio" name="style" id="{{style.id}}" value="{{style.name}}" {% if style.selected %}checked="checked"{% endif %}>
+          <label for="{{style.id}}">{{style.name}}</label>
+        {% endfor %}
+      </form>
+    </div>
+    <div class="styles__preview">
+      <!-- Images used to open the lightbox -->
+      <div class="styles__gallery" id="style-gallery">
+        <div class="styles__gallery-column">
+          {% for item in settings.styles[0].images | every(3, 0) %}
+            <img src="{{item.sm}}" data-l-src="{{item.l}}" class="hover-shadow">
+          {% endfor %}
+          </div>
+        <div class="styles__gallery-column">
+          {% for item in settings.styles[0].images | every(3, 1) %}
+            <img src="{{item.sm}}" data-l-src="{{item.l}}" class="hover-shadow">
+          {% endfor %}
+        </div>
+        <div class="styles__gallery-column">
+          {% for item in settings.styles[0].images | every(3, 2) %}
+            <img src="{{item.sm}}" data-l-src="{{item.l}}" class="hover-shadow">
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="price">
+    <h2 class="bordered-heading">Цены</h2>
+    <div class="price__list">
+        <div class="price__item" data-aos="fade-up"
+          data-aos-duration="500">
+          <div class="price__item-info">
+          <span class="price__item-title"> Формат А4</span>
+          <span class="price__value"> 2900 ₽</span>
+          <div>Особенности</div>
+          <ul>
+            <li>Рисунок может быть без полей (полностью заполнять лист)</li>
+            <li>Такой постер можно вставить в паспарту, что придаст ему более крсивый вид</li>
+            <li>Прост в пересылке</li>
+          </ul>
+          </div>
+          <div class="price__item-action">
+            <button>Заказать</button>
+          </div>
+        </div>
+
+        <div class="price__item" data-aos="fade-up"
+          data-aos-duration="1000">
+          <div class="price__item-info">
+          <span class="price__item-title">Формат А3</span>
+          <span class="price__value"> 3900 ₽</span>
+          <div>Особенности</div>
+          <ul>
+            <li>Рисунок может быть без полей (полностью заполнять лист)</li>
+            <li>Изображение такого размера красиво смотрится издалека</li>
+            <li>При пересылке используется картонный тубус</li>
+          </ul>
+          </div>
+          <div class="price__item-action">
+            <button>Заказать</button>
+          </div>
+        </div>
+        <div class="price__item" data-aos="fade-up"
+          data-aos-duration="1500">
+          <div class="price__item-info">
+          <span class="price__item-title"> Формат А2</span>
+          <span class="price__value"> 5900 ₽</span>
+          <div>Особенности</div>
+          <ul>
+            <li>Максимальный размер изображения 410х455</li>
+            <li>Такой постер можно смело вствлять в рамку без паспарту и он будет классно смотреться</li>
+            <li>Отлично подойдет для заполнения пустого прострнства стены</li>
+          </ul>
+        </div>
+        
+        <div class="price__item-action">
+          <button>Заказать</button>
+        </div>
+        </div>
+    </div>
+    <p>Пересылка в другой город осуществляется через СДЕК, Boxberry или Почту России (в среднем +500 ₽)</p>
+  </section>
+
+  <section class="order-action">
+    <div class="order-action__form">
+      <h3>Сделайте заказ</h3>
+      <form>
+        <input type="text" name="name" id="name" placeholder="Имя" required>
+        <input type="email" name="email" id="email" placeholder="E-mail" required>
+        <label for="file" class="order-action__file-upload">
+            Перетащите или выберите фото
+        </label>
+        <div class="order-action__uploaded-foto"></div>
+        <input type="file" name="file" id="file" placeholder="file" required>
+        <select id="style" name="style" required>
+          <option value="none" selected disabled hidden>Стиль</option>
+          {% for style in settings.styles %}
+            <option value="{{style.id}}">{{style.name}}</option>
+          {% endfor %}
+        </select>
+        <textarea name="addition" id="addition" placeholder="Дополнительная информация, контакты, альтернативные стили"></textarea>
+        <button type="submit">Отправить заявку</button>
+      </form>
+    </div>
+    <div class="order-action__info">
+      <h2>Хотите постер?</h2>
+      <p>Напишите мне в Viber или Telegram</p>
+      <p>или</p>
+      <p>Отправьте заявку через форму и я свяжусь с вами. Мы обсудим детали и я предложу Вам варианты исполнения. Через пару дней ваш постер будет готов</p>
+
+    </div>
+  </section>
+
+  <div class="bg-image-down"></div>
+  <!-- The Modal/Lightbox -->
+<div id="gallery-modal" class="modal">
+  <span class="close cursor">&times;</span>
+  <div class="modal-content">
+    <div class="slides">
+    </div>
+    <!-- Next/previous controls -->
+    <a class="prev control-button" data-id="prev">&#10094;</a>
+    <a class="next control-button" data-id="next">&#10095;</a>
+    <!-- Thumbnail image controls -->
+    <div class="gallery-image-preview">
+      {% for item in settings.styles[0].images %}
+      <div class="preview-wrapper" >
+        <img src="{{item.sm}}" data-l-src="{{item.l}}" class="hover-shadow">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<script type="module" src="scripts/index.js"></script>
+</body>
+</html>

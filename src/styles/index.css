@@ -1,0 +1,602 @@
+@import "./font.css";
+@import "./variables.css";
+@import "./animation.css";
+@import "./video.css";
+
+@import './aos.css';
+
+body {
+  /* background: linear-gradient(307.27deg,#096f5c .37%,#687eb5 50.19%,#8877ce),radial-gradient(100% 140% at 100% 0,#ff00c7 0,#006c7a 49.48%,rgb(216, 156, 3) 100%);
+  background-blend-mode: overlay,difference,overlay,overlay,difference,color-dodge,normal; */
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 100%;
+  padding: var(--padding-l);
+  position: relative;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+body.draggable {
+  border: 0.2rem #4fc501 dashed;
+  filter: opacity(0.5);
+}
+
+.bg-image,
+.bg-image-down {
+  z-index: -1;
+  opacity: 0.3;
+  position: absolute;
+  background: transparent url(../images/bg.svg) no-repeat;
+}
+
+.bg-image {
+  width: 1000px;
+  height: 1000px;
+  top: -15%;
+  right: 0;
+}
+
+.bg-image-down {
+  width: 100%;
+  height: 500px;
+  bottom: 0;
+  left: 0;
+  background-position-y: 19%;
+  background-position-x: -200px;
+}
+
+.bordered-heading {
+  border-left: 0.4rem var(--accent-color) solid;
+  padding-left: 1rem;
+}
+
+body > section {
+  padding-left: 2rem;
+  margin: 3rem 0;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+}
+
+.head__menu-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px rgba(93, 93, 93, 0.5) solid;
+}
+
+.head__logo {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: Helvetica;
+}
+
+.head__nav {
+  padding: var(--padding-xs) 0;
+}
+
+.head__nav-item {
+  color: #3c3c3c;
+  text-decoration: none;
+  padding-left: var(--padding-xl);
+}
+
+.main-info {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-info__content {
+  width: 35%;
+  text-align: left;
+}
+
+.main-info__content h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.main-info p,
+.order-info__text p {
+  line-height: 1.7rem;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-info__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+.personal-info__text {
+  line-height: 1.7rem;
+}
+
+.personal-info__statistic {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 50%;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+
+.personal-info__statistic-item {
+  display: flex;
+  flex: 1 1 45%;
+  flex-direction: column;
+  max-width: 45%;
+  margin-bottom: 1.5rem;
+}
+
+.personal-info__statistic-value {
+  font-size: 1.7rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.personal-info__statistic-text {
+  font-size: 0.9rem;
+  color: var(--secondary-text-color);
+}
+
+.personal-info__description {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+}
+
+.personal-info__social-icons {
+  text-align: right;
+  margin-top: var(--padding-m);
+  display: flex;
+  justify-content: space-around;
+}
+
+.personal-info__social-icons img{
+  width: 32px;
+}
+
+.personal-info__social-link {
+  text-align: center;
+  font-size: .8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-container {
+  width: 500px;
+  margin: 1rem auto;
+}
+
+.order-info {
+  display: flex;
+}
+
+.order-info__steps {
+  flex: 1 1 50%;
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-info__step {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.3rem 1rem;
+}
+
+.order-info__step-title {
+  font-size: 1.3rem;
+  margin-bottom: var(--padding-m);
+}
+
+.order-info__step-text {
+  color: var(--secondary-text-color);
+}
+
+.order-info__text {
+  flex: 1 1 50%;
+  padding-right: 3rem;
+}
+
+.order-info__text h2 {
+  font-size: 2rem;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.radio-button {
+  display: none;
+}
+
+.radio-button + label {
+  display: inline-block;
+  border-radius: 1rem;
+  padding: var(--padding-m);
+  border: 1px white solid;
+  cursor: pointer;
+}
+
+.radio-button:checked + label {
+  background-color: #ff00c7;
+}
+
+.styles {
+  display: flex;
+  flex-direction: row;
+  background: #46a2f8;
+  padding: 3rem;
+  color: white;
+}
+
+.styles h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.styles__radio {
+  flex: 1 1 50%;
+  min-width: 45%;
+}
+
+.styles__radio h2 {
+  border-color: white;
+}
+
+.styles__preview {
+  max-width: 50%;
+}
+
+/* gallery */
+
+.styles__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 600px;
+  max-width: 100%;
+}
+
+/* Create four equal columns that floats next to eachother */
+.styles__gallery-column {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+
+.styles__gallery-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  cursor: pointer;
+}
+
+.price__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.price h2 {
+  font-size: 1.7rem;
+}
+
+.price__item {
+  flex: 1 1 30%;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.3rem;
+  padding: 1.2rem;
+  margin: 0 1rem;
+  justify-content: space-between;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
+.price__item-action {
+  text-align: center;
+}
+
+.price__item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.price__item-info li {
+  margin-bottom: 0.5rem;
+}
+
+.price__item-info ul {
+  padding-inline-start: 1.4rem;
+  list-style: none;
+}
+
+.price__item-info ul li {
+  position: relative;
+}
+
+.price__item-info ul li:before {
+  content: " ";
+  position: absolute;
+  width: 1rem;
+  height: 0.5rem;
+  left: -1.5rem;
+  transform: rotate(-45deg);
+  border-bottom: 2px #4fc501 solid;
+  border-left: 2px #4fc501 solid;
+}
+
+.price__item:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.price__item-title {
+  font-size: 1.2rem;
+}
+
+.price__value {
+  color: var(--accent-color);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.price__item button {
+  height: 2.5rem;
+  background-color: #4fc501;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 0.3rem;
+  width: 80%;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.order__options label {
+  display: block;
+  width: 200px;
+  margin-bottom: var(--padding-m);
+}
+
+.order-action__form {
+  background: white;
+  width: 300px;
+  flex: 1 1 300px;
+  max-width: 300px;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.order-action__form h3 {
+  margin-top: 0;
+}
+
+.order-action__form button {
+  height: 2.5rem;
+  width: 100%;
+  background: #4fc501;
+  border: none;
+  border-radius: .3rem;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.order-action__info {
+  flex: 1 1 50%;
+  max-width: 50%;
+}
+
+.order-action__form input,
+.order-action__form select,
+.order-action__form textarea {
+  display: block;
+  margin: 1rem auto;
+  height: 2.3rem;
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+  padding-left: 0.5rem;
+}
+
+.order-action__form textarea {
+  height: 5rem;
+}
+
+.order-action__form input[type="file"] {
+  display: none;
+}
+
+.order-action__form select:hidden { 
+  color: gray; 
+}
+
+.order-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.order-action__file-upload {
+  display: block;
+  height: 1rem;
+  border: 1px black dotted;
+  padding: 1rem 0.5rem;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000bd;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+  height: calc(100% - 200px);
+}
+
+.modal .slides {
+  height: 100%;
+  width: 100%;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.slide-item {
+  opacity: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: black;
+  transition: opacity 0.3s;
+  position: absolute;
+}
+
+.slide-item.active {
+  opacity: 1;
+}
+
+.slide-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.gallery-image-preview {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow-x: auto;
+  height: 100px;
+  width: 100%;
+}
+
+.preview-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* end gallery */
