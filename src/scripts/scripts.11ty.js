@@ -1,5 +1,5 @@
 const path = require('path');
-const vite = require('vite');
+//const vite = require('vite');
 const esbuild = require('esbuild');
 
 const { NODE_ENV = 'production' } = process.env

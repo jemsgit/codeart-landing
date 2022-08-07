@@ -30,7 +30,7 @@ export default class GallerySlider {
 
   closeModal() {
     document.getElementById(galleryModalId).style.display = "none";
-    document.body.classList.toggle('modal-open');
+    document.body.classList.remove('modal-open');
   }
 
   controlClick = (e) => {

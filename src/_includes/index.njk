@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
   <title>{{ title }}</title>
   <link rel="stylesheet" href="styles/index.css">
 </head>
@@ -94,24 +95,32 @@
     </div>
     <div class="order-info__steps" data-aos="zoom-in-down">
       <div class="order-info__step">
-        <img src="" alt="" class="order-info__step-icon">
-        <span class="order-info__step-title">Выберите фото</span>
-        <span class="order-info__step-text">Если это портрет, желательно чтобы черты лица были хорошо видны. Чем больше разрешение фотографии, тем лучше</span>
+        <img src="/icons/image-solid.svg" alt="" class="order-info__step-icon">
+        <div class="order-info__step-description">
+          <span class="order-info__step-title">Выберите фото</span>
+          <span class="order-info__step-text">Если это портрет, желательно чтобы черты лица были хорошо видны. Чем больше разрешение фотографии, тем лучше</span>
+        </div>
       </div>
       <div class="order-info__step">
-        <img src="" alt="" class="order-info__step-icon">
-        <span class="order-info__step-title">Выберите стиль</span>
-        <span class="order-info__step-text">Ниже вы можете ознакомиться с вариантами исполнения. Если вы не знаете какой выбрать, я Вам помогу и предложу варианты</span>
+        <img src="/icons/brush-solid.svg" alt="" class="order-info__step-icon">
+        <div class="order-info__step-description">
+          <span class="order-info__step-title">Выберите стиль</span>
+          <span class="order-info__step-text">Ниже вы можете ознакомиться с вариантами исполнения. Если вы не знаете какой выбрать, я Вам помогу и предложу варианты</span>
+        </div>
       </div>
       <div class="order-info__step">
-        <img src="" alt="" class="order-info__step-icon">
-        <span class="order-info__step-title">Отправьте фото</span>
-        <span class="order-info__step-text">А также свои пожелания по исполнению и доставке заказа. Обязательно укажите контакты для обратной связи, чтобы мы обсудили детали</span>
+        <img src="/icons/file-import-solid.svg" alt="" class="order-info__step-icon">
+        <div class="order-info__step-description">
+          <span class="order-info__step-title">Отправьте фото</span>
+          <span class="order-info__step-text">А также свои пожелания по исполнению и доставке заказа. Обязательно укажите контакты для обратной связи, чтобы мы обсудили детали</span>
+        </div>
       </div>
       <div class="order-info__step">
-        <img src="" alt="" class="order-info__step-icon">
-        <span class="order-info__step-title">Получите заказ</span>
-        <span class="order-info__step-text">Вы можете произвести оплту после изготовления постера. Затем я передам его вам одним из возможных способов доствки</span>
+        <img src="/icons/box-open-solid.svg" alt="" class="order-info__step-icon">
+        <div class="order-info__step-description">
+          <span class="order-info__step-title">Получите заказ</span>
+          <span class="order-info__step-text">Вы можете произвести оплту после изготовления постера. Затем я передам его вам одним из возможных способов доствки</span>
+        </div>
       </div>
     </div>
   </section>
@@ -209,16 +218,16 @@
   </section>
 
   <section class="order-action">
-    <div class="order-action__form">
+    <div class="order-action__form-wrapper">
       <h3>Сделайте заказ</h3>
-      <form>
+      <form class="order-action__form">
         <input type="text" name="name" id="name" placeholder="Имя" required>
         <input type="email" name="email" id="email" placeholder="E-mail" required>
         <label for="file" class="order-action__file-upload">
             Перетащите или выберите фото
         </label>
         <div class="order-action__uploaded-foto"></div>
-        <input type="file" name="file" id="file" placeholder="file" required>
+        <input type="file" name="file" id="file" placeholder="file">
         <select id="style" name="style" required>
           <option value="none" selected disabled hidden>Стиль</option>
           {% for style in settings.styles %}
@@ -227,12 +236,13 @@
         </select>
         <textarea name="addition" id="addition" placeholder="Дополнительная информация, контакты, альтернативные стили"></textarea>
         <button type="submit">Отправить заявку</button>
+        <div class="order-action__form-errors"></div>
       </form>
     </div>
     <div class="order-action__info">
       <h2>Хотите постер?</h2>
-      <p>Напишите мне в Viber или Telegram</p>
-      <p>или</p>
+      <p>Напишите мне в <a href="{{settings.viberLink}}">Viber</a> или <a href="{{settings.telegramLink}}">Telegram</a></p>
+      <p class="order-action__split-text">или</p>
       <p>Отправьте заявку через форму и я свяжусь с вами. Мы обсудим детали и я предложу Вам варианты исполнения. Через пару дней ваш постер будет готов</p>
 
     </div>
@@ -258,6 +268,7 @@
     </div>
   </div>
 </div>
+<div class="notification"></div>
 <script type="module" src="scripts/index.js"></script>
 </body>
 </html>
