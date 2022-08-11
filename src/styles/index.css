@@ -264,7 +264,6 @@ body > section {
   background: #46a2f8;
   padding: 3rem;
   color: white;
-  max-height: 400px;
 }
 
 .styles h2 {
@@ -284,6 +283,8 @@ body > section {
 .styles__preview {
   max-width: 50%;
   overflow: auto;
+  min-height: 300px;
+  max-height: 400px;
 }
 
 /* gallery */
@@ -535,7 +536,7 @@ body > section {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 3rem;
   left: 0;
   top: 0;
   width: 100%;
@@ -627,6 +628,7 @@ body > section {
   overflow-x: auto;
   height: 100px;
   width: 100%;
+  margin-top: 2rem;
 }
 
 .preview-wrapper img {

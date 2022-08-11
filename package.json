@@ -22,6 +22,7 @@
     "browser-sync": "^2.27.10",
     "browserify": "^17.0.0",
     "esbuild": "^0.14.53",
+    "vinyl": "^2.2.1",
     "vite": "^3.0.4"
   },
   "dependencies": {
@@ -29,8 +30,11 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "gulp": "^4.0.2",
+    "gulp-shell": "^0.8.0",
     "lodash": "^4.17.21",
     "multer": "^1.4.5-lts.1",
-    "node-telegram-bot-api": "^0.58.0"
+    "node-telegram-bot-api": "^0.58.0",
+    "through2": "^4.0.2"
   }
 }

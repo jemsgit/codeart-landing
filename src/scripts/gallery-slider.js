@@ -17,6 +17,26 @@ export default class GallerySlider {
     this.removeEvents();
   }
 
+  handleKey = (e) => {
+    console.log(e)
+    if(this.modalEl.style.display === 'none') {
+      return;
+    }
+
+    if (e.keyCode === 39) {
+      this.nextSlide();
+      return;
+    }
+    if (e.keyCode === 37) {
+      this.prevSlide();
+      return;
+    }
+    if (e.keyCode === 27) {
+      this.closeModal();
+      return;
+    }
+  }
+
   openModal = (e) => {
     if(!e.target.getAttribute('data-l-src')) {
       return;
@@ -147,6 +167,7 @@ export default class GallerySlider {
     previewContainer.addEventListener('click', this.setActiveImage);
     controls.forEach(item => item.addEventListener('click', this.controlClick))
     gallery.addEventListener('click', this.openModal);
+    document.addEventListener('keyup', this.handleKey);
     closeButton.addEventListener('click', this.closeModal);
   }
 

@@ -1,0 +1,714 @@
+[
+  {
+    "id": "ascii",
+    "images": [
+      {
+        "sm": "images/gallery/ascii/sm/ascii1.jpg",
+        "l": "images/gallery/ascii/ascii1.jpg"
+      },
+      {
+        "sm": "images/gallery/ascii/sm/ascii2.jpg",
+        "l": "images/gallery/ascii/ascii2.jpg"
+      },
+      {
+        "sm": "images/gallery/ascii/sm/ascii3.jpg",
+        "l": "images/gallery/ascii/ascii3.jpg"
+      },
+      {
+        "sm": "images/gallery/ascii/sm/ascii4.jpg",
+        "l": "images/gallery/ascii/ascii4.jpg"
+      },
+      {
+        "sm": "images/gallery/ascii/sm/ascii4.png",
+        "l": "images/gallery/ascii/ascii4.png"
+      }
+    ]
+  },
+  {
+    "id": "cross_sign",
+    "images": [
+      {
+        "sm": "images/gallery/cross_sign/sm/cross_sign1.png",
+        "l": "images/gallery/cross_sign/cross_sign1.png"
+      },
+      {
+        "sm": "images/gallery/cross_sign/sm/cross_sign2.png",
+        "l": "images/gallery/cross_sign/cross_sign2.png"
+      },
+      {
+        "sm": "images/gallery/cross_sign/sm/cross_sign3.png",
+        "l": "images/gallery/cross_sign/cross_sign3.png"
+      },
+      {
+        "sm": "images/gallery/cross_sign/sm/cross_sign4.png",
+        "l": "images/gallery/cross_sign/cross_sign4.png"
+      },
+      {
+        "sm": "images/gallery/cross_sign/sm/cross_sign5.png",
+        "l": "images/gallery/cross_sign/cross_sign5.png"
+      },
+      {
+        "sm": "images/gallery/cross_sign/sm/cross_sign6.png",
+        "l": "images/gallery/cross_sign/cross_sign6.png"
+      },
+      {
+        "sm": "images/gallery/cross_sign/sm/cross_sign7.png",
+        "l": "images/gallery/cross_sign/cross_sign7.png"
+      },
+      {
+        "sm": "images/gallery/cross_sign/sm/cross_sign8.png",
+        "l": "images/gallery/cross_sign/cross_sign8.png"
+      },
+      {
+        "sm": "images/gallery/cross_sign/sm/cross_sign9.png",
+        "l": "images/gallery/cross_sign/cross_sign9.png"
+      }
+    ]
+  },
+  {
+    "id": "crosshatch",
+    "images": [
+      {
+        "sm": "images/gallery/crosshatch/sm/crosshatch1.jpg",
+        "l": "images/gallery/crosshatch/crosshatch1.jpg"
+      },
+      {
+        "sm": "images/gallery/crosshatch/sm/crosshatch2.jpg",
+        "l": "images/gallery/crosshatch/crosshatch2.jpg"
+      },
+      {
+        "sm": "images/gallery/crosshatch/sm/crosshatch3.jpg",
+        "l": "images/gallery/crosshatch/crosshatch3.jpg"
+      },
+      {
+        "sm": "images/gallery/crosshatch/sm/crosshatch4.jpg",
+        "l": "images/gallery/crosshatch/crosshatch4.jpg"
+      },
+      {
+        "sm": "images/gallery/crosshatch/sm/crosshatch5.jpg",
+        "l": "images/gallery/crosshatch/crosshatch5.jpg"
+      },
+      {
+        "sm": "images/gallery/crosshatch/sm/crosshatch6.jpg",
+        "l": "images/gallery/crosshatch/crosshatch6.jpg"
+      }
+    ]
+  },
+  {
+    "id": "d2s",
+    "images": [
+      {
+        "sm": "images/gallery/d2s/sm/d2s_1.jpg",
+        "l": "images/gallery/d2s/d2s_1.jpg"
+      },
+      {
+        "sm": "images/gallery/d2s/sm/d2s_2.jpg",
+        "l": "images/gallery/d2s/d2s_2.jpg"
+      },
+      {
+        "sm": "images/gallery/d2s/sm/d2s_3.jpg",
+        "l": "images/gallery/d2s/d2s_3.jpg"
+      },
+      {
+        "sm": "images/gallery/d2s/sm/d2s_4.jpg",
+        "l": "images/gallery/d2s/d2s_4.jpg"
+      },
+      {
+        "sm": "images/gallery/d2s/sm/d2s_5.jpg",
+        "l": "images/gallery/d2s/d2s_5.jpg"
+      }
+    ]
+  },
+  {
+    "id": "delanoy_triangular",
+    "images": [
+      {
+        "sm": "images/gallery/delanoy_triangular/sm/delanoy_tr1.png",
+        "l": "images/gallery/delanoy_triangular/delanoy_tr1.png"
+      },
+      {
+        "sm": "images/gallery/delanoy_triangular/sm/delanoy_tr2.png",
+        "l": "images/gallery/delanoy_triangular/delanoy_tr2.png"
+      },
+      {
+        "sm": "images/gallery/delanoy_triangular/sm/delanoy_tr3.png",
+        "l": "images/gallery/delanoy_triangular/delanoy_tr3.png"
+      },
+      {
+        "sm": "images/gallery/delanoy_triangular/sm/delanoy_tr4.png",
+        "l": "images/gallery/delanoy_triangular/delanoy_tr4.png"
+      },
+      {
+        "sm": "images/gallery/delanoy_triangular/sm/delanoy_tr5.png",
+        "l": "images/gallery/delanoy_triangular/delanoy_tr5.png"
+      },
+      {
+        "sm": "images/gallery/delanoy_triangular/sm/delanoy_tr6.png",
+        "l": "images/gallery/delanoy_triangular/delanoy_tr6.png"
+      },
+      {
+        "sm": "images/gallery/delanoy_triangular/sm/delanoy_tr7.jpg",
+        "l": "images/gallery/delanoy_triangular/delanoy_tr7.jpg"
+      },
+      {
+        "sm": "images/gallery/delanoy_triangular/sm/delanoy_tr8.jpg",
+        "l": "images/gallery/delanoy_triangular/delanoy_tr8.jpg"
+      }
+    ]
+  },
+  {
+    "id": "delanoy_points",
+    "images": [
+      {
+        "sm": "images/gallery/delanoy_points/sm/delanoy_p1.png",
+        "l": "images/gallery/delanoy_points/delanoy_p1.png"
+      },
+      {
+        "sm": "images/gallery/delanoy_points/sm/delanoy_p10.png",
+        "l": "images/gallery/delanoy_points/delanoy_p10.png"
+      },
+      {
+        "sm": "images/gallery/delanoy_points/sm/delanoy_p11.jpeg",
+        "l": "images/gallery/delanoy_points/delanoy_p11.jpeg"
+      },
+      {
+        "sm": "images/gallery/delanoy_points/sm/delanoy_p12.jpeg",
+        "l": "images/gallery/delanoy_points/delanoy_p12.jpeg"
+      },
+      {
+        "sm": "images/gallery/delanoy_points/sm/delanoy_p13.jpg",
+        "l": "images/gallery/delanoy_points/delanoy_p13.jpg"
+      },
+      {
+        "sm": "images/gallery/delanoy_points/sm/delanoy_p14.jpg",
+        "l": "images/gallery/delanoy_points/delanoy_p14.jpg"
+      },
+      {
+        "sm": "images/gallery/delanoy_points/sm/delanoy_p15.jpg",
+        "l": "images/gallery/delanoy_points/delanoy_p15.jpg"
+      },
+      {
+        "sm": "images/gallery/delanoy_points/sm/delanoy_p2.png",
+        "l": "images/gallery/delanoy_points/delanoy_p2.png"
+      },
+      {
+        "sm": "images/gallery/delanoy_points/sm/delanoy_p3.png",
+        "l": "images/gallery/delanoy_points/delanoy_p3.png"
+      },
+      {
+        "sm": "images/gallery/delanoy_points/sm/delanoy_p4.png",
+        "l": "images/gallery/delanoy_points/delanoy_p4.png"
+      },
+      {
+        "sm": "images/gallery/delanoy_points/sm/delanoy_p5.png",
+        "l": "images/gallery/delanoy_points/delanoy_p5.png"
+      },
+      {
+        "sm": "images/gallery/delanoy_points/sm/delanoy_p6.png",
+        "l": "images/gallery/delanoy_points/delanoy_p6.png"
+      },
+      {
+        "sm": "images/gallery/delanoy_points/sm/delanoy_p7.png",
+        "l": "images/gallery/delanoy_points/delanoy_p7.png"
+      },
+      {
+        "sm": "images/gallery/delanoy_points/sm/delanoy_p8.png",
+        "l": "images/gallery/delanoy_points/delanoy_p8.png"
+      },
+      {
+        "sm": "images/gallery/delanoy_points/sm/delanoy_p9.png",
+        "l": "images/gallery/delanoy_points/delanoy_p9.png"
+      }
+    ]
+  },
+  {
+    "id": "drawbot",
+    "images": [
+      {
+        "sm": "images/gallery/drawbot/sm/drawbot1.jpg",
+        "l": "images/gallery/drawbot/drawbot1.jpg"
+      },
+      {
+        "sm": "images/gallery/drawbot/sm/drawbot2.jpg",
+        "l": "images/gallery/drawbot/drawbot2.jpg"
+      },
+      {
+        "sm": "images/gallery/drawbot/sm/drawbot3.jpg",
+        "l": "images/gallery/drawbot/drawbot3.jpg"
+      },
+      {
+        "sm": "images/gallery/drawbot/sm/drawbot4.jpg",
+        "l": "images/gallery/drawbot/drawbot4.jpg"
+      },
+      {
+        "sm": "images/gallery/drawbot/sm/drawbot5.jpg",
+        "l": "images/gallery/drawbot/drawbot5.jpg"
+      }
+    ]
+  },
+  {
+    "id": "dots",
+    "images": [
+      {
+        "sm": "images/gallery/dots/sm/dots1.png",
+        "l": "images/gallery/dots/dots1.png"
+      },
+      {
+        "sm": "images/gallery/dots/sm/dots2.png",
+        "l": "images/gallery/dots/dots2.png"
+      },
+      {
+        "sm": "images/gallery/dots/sm/dots3.png",
+        "l": "images/gallery/dots/dots3.png"
+      },
+      {
+        "sm": "images/gallery/dots/sm/dots4.png",
+        "l": "images/gallery/dots/dots4.png"
+      },
+      {
+        "sm": "images/gallery/dots/sm/dots5.png",
+        "l": "images/gallery/dots/dots5.png"
+      },
+      {
+        "sm": "images/gallery/dots/sm/dots6.png",
+        "l": "images/gallery/dots/dots6.png"
+      },
+      {
+        "sm": "images/gallery/dots/sm/dots7.jpg",
+        "l": "images/gallery/dots/dots7.jpg"
+      },
+      {
+        "sm": "images/gallery/dots/sm/dots8.jpg",
+        "l": "images/gallery/dots/dots8.jpg"
+      }
+    ]
+  },
+  {
+    "id": "halftone",
+    "images": [
+      {
+        "sm": "images/gallery/halftone/sm/haltone1.png",
+        "l": "images/gallery/halftone/haltone1.png"
+      },
+      {
+        "sm": "images/gallery/halftone/sm/haltone2.png",
+        "l": "images/gallery/halftone/haltone2.png"
+      },
+      {
+        "sm": "images/gallery/halftone/sm/haltone3.png",
+        "l": "images/gallery/halftone/haltone3.png"
+      },
+      {
+        "sm": "images/gallery/halftone/sm/haltone4.png",
+        "l": "images/gallery/halftone/haltone4.png"
+      },
+      {
+        "sm": "images/gallery/halftone/sm/haltone5.png",
+        "l": "images/gallery/halftone/haltone5.png"
+      },
+      {
+        "sm": "images/gallery/halftone/sm/haltone6.png",
+        "l": "images/gallery/halftone/haltone6.png"
+      },
+      {
+        "sm": "images/gallery/halftone/sm/haltone7.png",
+        "l": "images/gallery/halftone/haltone7.png"
+      },
+      {
+        "sm": "images/gallery/halftone/sm/haltone8.jpg",
+        "l": "images/gallery/halftone/haltone8.jpg"
+      },
+      {
+        "sm": "images/gallery/halftone/sm/haltone9.jpg",
+        "l": "images/gallery/halftone/haltone9.jpg"
+      }
+    ]
+  },
+  {
+    "id": "hexa",
+    "images": [
+      {
+        "sm": "images/gallery/hexa/sm/hexa1.png",
+        "l": "images/gallery/hexa/hexa1.png"
+      },
+      {
+        "sm": "images/gallery/hexa/sm/hexa10.png",
+        "l": "images/gallery/hexa/hexa10.png"
+      },
+      {
+        "sm": "images/gallery/hexa/sm/hexa11.png",
+        "l": "images/gallery/hexa/hexa11.png"
+      },
+      {
+        "sm": "images/gallery/hexa/sm/hexa12.png",
+        "l": "images/gallery/hexa/hexa12.png"
+      },
+      {
+        "sm": "images/gallery/hexa/sm/hexa2.png",
+        "l": "images/gallery/hexa/hexa2.png"
+      },
+      {
+        "sm": "images/gallery/hexa/sm/hexa3.png",
+        "l": "images/gallery/hexa/hexa3.png"
+      },
+      {
+        "sm": "images/gallery/hexa/sm/hexa4.png",
+        "l": "images/gallery/hexa/hexa4.png"
+      },
+      {
+        "sm": "images/gallery/hexa/sm/hexa5.png",
+        "l": "images/gallery/hexa/hexa5.png"
+      },
+      {
+        "sm": "images/gallery/hexa/sm/hexa6.png",
+        "l": "images/gallery/hexa/hexa6.png"
+      },
+      {
+        "sm": "images/gallery/hexa/sm/hexa7.png",
+        "l": "images/gallery/hexa/hexa7.png"
+      },
+      {
+        "sm": "images/gallery/hexa/sm/hexa8.png",
+        "l": "images/gallery/hexa/hexa8.png"
+      },
+      {
+        "sm": "images/gallery/hexa/sm/hexa9.png",
+        "l": "images/gallery/hexa/hexa9.png"
+      }
+    ]
+  },
+  {
+    "id": "pulse_circle",
+    "images": [
+      {
+        "sm": "images/gallery/pulse_circle/sm/2022-07-17 03.22.50.jpg",
+        "l": "images/gallery/pulse_circle/2022-07-17 03.22.50.jpg"
+      },
+      {
+        "sm": "images/gallery/pulse_circle/sm/2022-07-17 03.22.56.jpg",
+        "l": "images/gallery/pulse_circle/2022-07-17 03.22.56.jpg"
+      }
+    ]
+  },
+  {
+    "id": "mosaic",
+    "images": [
+      {
+        "sm": "images/gallery/mosaic/sm/mosaic8.jpeg",
+        "l": "images/gallery/mosaic/mosaic8.jpeg"
+      },
+      {
+        "sm": "images/gallery/mosaic/sm/mosaic9.jpeg",
+        "l": "images/gallery/mosaic/mosaic9.jpeg"
+      },
+      {
+        "sm": "images/gallery/mosaic/sm/mosasic1.png",
+        "l": "images/gallery/mosaic/mosasic1.png"
+      },
+      {
+        "sm": "images/gallery/mosaic/sm/mosasic2.png",
+        "l": "images/gallery/mosaic/mosasic2.png"
+      },
+      {
+        "sm": "images/gallery/mosaic/sm/mosasic4.png",
+        "l": "images/gallery/mosaic/mosasic4.png"
+      },
+      {
+        "sm": "images/gallery/mosaic/sm/mosasic5.png",
+        "l": "images/gallery/mosaic/mosasic5.png"
+      },
+      {
+        "sm": "images/gallery/mosaic/sm/mosasic6.png",
+        "l": "images/gallery/mosaic/mosasic6.png"
+      },
+      {
+        "sm": "images/gallery/mosaic/sm/mosasic7.png",
+        "l": "images/gallery/mosaic/mosasic7.png"
+      }
+    ]
+  },
+  {
+    "id": "random_lines",
+    "images": [
+      {
+        "sm": "images/gallery/random_lines/sm/2022-07-17 02.39.19.jpg",
+        "l": "images/gallery/random_lines/2022-07-17 02.39.19.jpg"
+      },
+      {
+        "sm": "images/gallery/random_lines/sm/2022-07-17 02.39.23.jpg",
+        "l": "images/gallery/random_lines/2022-07-17 02.39.23.jpg"
+      },
+      {
+        "sm": "images/gallery/random_lines/sm/2022-07-17 02.39.28.jpg",
+        "l": "images/gallery/random_lines/2022-07-17 02.39.28.jpg"
+      }
+    ]
+  },
+  {
+    "id": "romb",
+    "images": [
+      {
+        "sm": "images/gallery/romb/sm/romb1.png",
+        "l": "images/gallery/romb/romb1.png"
+      },
+      {
+        "sm": "images/gallery/romb/sm/romb10.png",
+        "l": "images/gallery/romb/romb10.png"
+      },
+      {
+        "sm": "images/gallery/romb/sm/romb2.png",
+        "l": "images/gallery/romb/romb2.png"
+      },
+      {
+        "sm": "images/gallery/romb/sm/romb3.png",
+        "l": "images/gallery/romb/romb3.png"
+      },
+      {
+        "sm": "images/gallery/romb/sm/romb4.png",
+        "l": "images/gallery/romb/romb4.png"
+      },
+      {
+        "sm": "images/gallery/romb/sm/romb5.png",
+        "l": "images/gallery/romb/romb5.png"
+      },
+      {
+        "sm": "images/gallery/romb/sm/romb6.png",
+        "l": "images/gallery/romb/romb6.png"
+      },
+      {
+        "sm": "images/gallery/romb/sm/romb7.png",
+        "l": "images/gallery/romb/romb7.png"
+      },
+      {
+        "sm": "images/gallery/romb/sm/romb8.png",
+        "l": "images/gallery/romb/romb8.png"
+      },
+      {
+        "sm": "images/gallery/romb/sm/romb9.png",
+        "l": "images/gallery/romb/romb9.png"
+      }
+    ]
+  },
+  {
+    "id": "squared",
+    "images": [
+      {
+        "sm": "images/gallery/squared/sm/squared1.png",
+        "l": "images/gallery/squared/squared1.png"
+      },
+      {
+        "sm": "images/gallery/squared/sm/squared2.png",
+        "l": "images/gallery/squared/squared2.png"
+      },
+      {
+        "sm": "images/gallery/squared/sm/squared3.png",
+        "l": "images/gallery/squared/squared3.png"
+      },
+      {
+        "sm": "images/gallery/squared/sm/squared4.png",
+        "l": "images/gallery/squared/squared4.png"
+      },
+      {
+        "sm": "images/gallery/squared/sm/squared5.png",
+        "l": "images/gallery/squared/squared5.png"
+      },
+      {
+        "sm": "images/gallery/squared/sm/squared6.png",
+        "l": "images/gallery/squared/squared6.png"
+      },
+      {
+        "sm": "images/gallery/squared/sm/squared7.png",
+        "l": "images/gallery/squared/squared7.png"
+      },
+      {
+        "sm": "images/gallery/squared/sm/squared8.png",
+        "l": "images/gallery/squared/squared8.png"
+      }
+    ]
+  },
+  {
+    "id": "squiggle",
+    "images": [
+      {
+        "sm": "images/gallery/squiggle/sm/squiggle1.jpg",
+        "l": "images/gallery/squiggle/squiggle1.jpg"
+      },
+      {
+        "sm": "images/gallery/squiggle/sm/squiggle2.jpg",
+        "l": "images/gallery/squiggle/squiggle2.jpg"
+      },
+      {
+        "sm": "images/gallery/squiggle/sm/squiggle3.jpg",
+        "l": "images/gallery/squiggle/squiggle3.jpg"
+      },
+      {
+        "sm": "images/gallery/squiggle/sm/squiggle4.jpg",
+        "l": "images/gallery/squiggle/squiggle4.jpg"
+      },
+      {
+        "sm": "images/gallery/squiggle/sm/squiggle5.jpg",
+        "l": "images/gallery/squiggle/squiggle5.jpg"
+      },
+      {
+        "sm": "images/gallery/squiggle/sm/squiggle6.jpg",
+        "l": "images/gallery/squiggle/squiggle6.jpg"
+      },
+      {
+        "sm": "images/gallery/squiggle/sm/squiggle7.jpg",
+        "l": "images/gallery/squiggle/squiggle7.jpg"
+      },
+      {
+        "sm": "images/gallery/squiggle/sm/squiggle8.jpg",
+        "l": "images/gallery/squiggle/squiggle8.jpg"
+      },
+      {
+        "sm": "images/gallery/squiggle/sm/squiggle9.jpg",
+        "l": "images/gallery/squiggle/squiggle9.jpg"
+      }
+    ]
+  },
+  {
+    "id": "squiggle_circle",
+    "images": [
+      {
+        "sm": "images/gallery/squiggle_circle/sm/squiggle_cir1.png",
+        "l": "images/gallery/squiggle_circle/squiggle_cir1.png"
+      },
+      {
+        "sm": "images/gallery/squiggle_circle/sm/squiggle_cir10.png",
+        "l": "images/gallery/squiggle_circle/squiggle_cir10.png"
+      },
+      {
+        "sm": "images/gallery/squiggle_circle/sm/squiggle_cir11.jpeg",
+        "l": "images/gallery/squiggle_circle/squiggle_cir11.jpeg"
+      },
+      {
+        "sm": "images/gallery/squiggle_circle/sm/squiggle_cir12.jpeg",
+        "l": "images/gallery/squiggle_circle/squiggle_cir12.jpeg"
+      },
+      {
+        "sm": "images/gallery/squiggle_circle/sm/squiggle_cir2.png",
+        "l": "images/gallery/squiggle_circle/squiggle_cir2.png"
+      },
+      {
+        "sm": "images/gallery/squiggle_circle/sm/squiggle_cir3.png",
+        "l": "images/gallery/squiggle_circle/squiggle_cir3.png"
+      },
+      {
+        "sm": "images/gallery/squiggle_circle/sm/squiggle_cir4.png",
+        "l": "images/gallery/squiggle_circle/squiggle_cir4.png"
+      },
+      {
+        "sm": "images/gallery/squiggle_circle/sm/squiggle_cir5.png",
+        "l": "images/gallery/squiggle_circle/squiggle_cir5.png"
+      },
+      {
+        "sm": "images/gallery/squiggle_circle/sm/squiggle_cir6.png",
+        "l": "images/gallery/squiggle_circle/squiggle_cir6.png"
+      },
+      {
+        "sm": "images/gallery/squiggle_circle/sm/squiggle_cir7.png",
+        "l": "images/gallery/squiggle_circle/squiggle_cir7.png"
+      },
+      {
+        "sm": "images/gallery/squiggle_circle/sm/squiggle_cir8.png",
+        "l": "images/gallery/squiggle_circle/squiggle_cir8.png"
+      },
+      {
+        "sm": "images/gallery/squiggle_circle/sm/squiggle_cir9.png",
+        "l": "images/gallery/squiggle_circle/squiggle_cir9.png"
+      }
+    ]
+  },
+  {
+    "id": "text",
+    "images": [
+      {
+        "sm": "images/gallery/text/sm/text_1.png",
+        "l": "images/gallery/text/text_1.png"
+      },
+      {
+        "sm": "images/gallery/text/sm/text_2.png",
+        "l": "images/gallery/text/text_2.png"
+      },
+      {
+        "sm": "images/gallery/text/sm/text_3.png",
+        "l": "images/gallery/text/text_3.png"
+      },
+      {
+        "sm": "images/gallery/text/sm/text_4.jpg",
+        "l": "images/gallery/text/text_4.jpg"
+      },
+      {
+        "sm": "images/gallery/text/sm/text_5.jpg",
+        "l": "images/gallery/text/text_5.jpg"
+      },
+      {
+        "sm": "images/gallery/text/sm/text_6.png",
+        "l": "images/gallery/text/text_6.png"
+      },
+      {
+        "sm": "images/gallery/text/sm/text_7.png",
+        "l": "images/gallery/text/text_7.png"
+      }
+    ]
+  },
+  {
+    "id": "triangle",
+    "images": [
+      {
+        "sm": "images/gallery/triangle/sm/triangle1.png",
+        "l": "images/gallery/triangle/triangle1.png"
+      },
+      {
+        "sm": "images/gallery/triangle/sm/triangle10.png",
+        "l": "images/gallery/triangle/triangle10.png"
+      },
+      {
+        "sm": "images/gallery/triangle/sm/triangle2.png",
+        "l": "images/gallery/triangle/triangle2.png"
+      },
+      {
+        "sm": "images/gallery/triangle/sm/triangle3.png",
+        "l": "images/gallery/triangle/triangle3.png"
+      },
+      {
+        "sm": "images/gallery/triangle/sm/triangle4.png",
+        "l": "images/gallery/triangle/triangle4.png"
+      },
+      {
+        "sm": "images/gallery/triangle/sm/triangle5.png",
+        "l": "images/gallery/triangle/triangle5.png"
+      },
+      {
+        "sm": "images/gallery/triangle/sm/triangle6.png",
+        "l": "images/gallery/triangle/triangle6.png"
+      },
+      {
+        "sm": "images/gallery/triangle/sm/triangle7.png",
+        "l": "images/gallery/triangle/triangle7.png"
+      },
+      {
+        "sm": "images/gallery/triangle/sm/triangle8.png",
+        "l": "images/gallery/triangle/triangle8.png"
+      },
+      {
+        "sm": "images/gallery/triangle/sm/triangle9.png",
+        "l": "images/gallery/triangle/triangle9.png"
+      }
+    ]
+  },
+  {
+    "id": "circle_sticks",
+    "images": [
+      {
+        "sm": "images/gallery/circle_sticks/sm/2022-07-17 02.39.32.jpg",
+        "l": "images/gallery/circle_sticks/2022-07-17 02.39.32.jpg"
+      },
+      {
+        "sm": "images/gallery/circle_sticks/sm/2022-07-17 02.39.36.jpg",
+        "l": "images/gallery/circle_sticks/2022-07-17 02.39.36.jpg"
+      }
+    ]
+  }
+]
