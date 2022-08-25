@@ -50,9 +50,11 @@ function validateFields() {
 function attachFileInputEvents() {
   fileInput.addEventListener('change', (e) => {
     if(!e.target.files || !e.target.files.length) {
+      clearFileLabel();
       return;
     }
-    setFileLabelText(e.target.files[0].name)
+    setFileLabelText(e.target.files[0].name);
+    setValidationErrors([]);
   });
 }
 
@@ -75,12 +77,21 @@ function attachDragEvents(el) {
     setFileLabelText(fileInput.files[0].name);
     e.preventDefault();
     el.classList.toggle('draggable');
+    setValidationErrors([]);
   })
 }
 
 function clearFileLabel() {
   let fileUploaded = document.querySelector(uploadedFileSelector);
   fileUploaded.innerText = "Перетащите или выберите фото";
+}
+
+function attachInputFocusEvents() {
+  form.addEventListener('focusout', (e) => {
+    if(e.target.nodeName === 'INPUT' || e.target.nodeName === 'SELECT') {
+      setValidationErrors([]);
+    }
+  })
 }
 
 function attachSubmitEvent() {
@@ -138,6 +149,7 @@ export default class FormManager {
   attachEvents() {
     attachDragEvents(document.body);
     attachFileInputEvents();
-    attachSubmitEvent()
+    attachSubmitEvent();
+    attachInputFocusEvents();
   }
 }

@@ -250,12 +250,13 @@ body > section {
   display: inline-block;
   border-radius: 1rem;
   padding: var(--padding-m);
+  margin-top: 0.3rem;
   border: 1px white solid;
   cursor: pointer;
 }
 
 .radio-button:checked + label {
-  background-color: #ff00c7;
+  background-color: #205aff;
 }
 
 .styles {
@@ -284,7 +285,21 @@ body > section {
   max-width: 50%;
   overflow: auto;
   min-height: 300px;
-  max-height: 400px;
+  max-height: 500px;
+}
+
+.styles__preview::-webkit-scrollbar {
+  width: 10px;
+}
+
+.styles__preview::-webkit-scrollbar-track {
+  background-color: #1a89f1;
+  border-radius: 5px;
+}
+
+.styles__preview::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 }
 
 /* gallery */
@@ -376,7 +391,7 @@ body > section {
 
 .price__value {
   color: var(--accent-color);
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -508,7 +523,6 @@ body > section {
 
 .order-action__file-upload {
   display: block;
-  height: 1rem;
   border: 1px black dotted;
   padding: 1rem 0.5rem;
   cursor: pointer;
@@ -540,6 +554,11 @@ body > section {
 
 .order-action__file-upload #delete:hover {
   background-color: #c5dff8;
+}
+
+.order-action__form-errors {
+  margin-top: 0.5rem;
+  color: #ff5a5a;
 }
 
 /* The Modal (background) */
@@ -689,6 +708,9 @@ body > section {
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  left: 10px;
+  width: 100%;
+  text-align: left;
 }
 
 /* Caption text */

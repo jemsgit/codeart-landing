@@ -13,11 +13,11 @@ const tgToken = process.env.TGTOKEN;
 const chatId = process.env.chatId;
 
 function getCaption(body) {
-  let { name, email, style, description } = body;
+  let { name, email, style, addition } = body;
   return `${name}
 ${email}
 ${style}
-${description}`.slice(0,1024);
+${addition}`.slice(0,1024);
 }
 
 function sendBadRequest(res) {
@@ -48,15 +48,16 @@ app.post('/order', upload.single('file'), async (req, res) => {
     const caption = getCaption(req.body);
     const buffer = fs.readFileSync(file.path);
     await bot.sendPhoto(chatId, buffer, { caption });
-    console.log('success');
   } catch(e) {
     console.log(e);
     sendBadRequest(res);
   } finally {
     if(file){
       fs.unlink(file.path, (e) => {
-        console.log(`cant delete file ${file.path}`);
-        console.log(e)
+        if(e) {
+          console.log(`cant delete file ${file.path}`);
+          console.log(e);
+        }
       })
     }
   }

@@ -62,9 +62,27 @@ gulp.task('minify-img', (cb) => {
 
 gulp.task('prepare-img', gulp.series('minify-img', 'image-list'));
 
-gulp.task('compile:11ty', (cb) => {
+gulp.task('compile:11ty', () => {
   return gulp
      .src('./public/**/*')
+     .pipe(gulp.dest('./dist/public'))
+})
+
+gulp.task('compile:11ty-scripts', () => {
+  return gulp
+     .src('./public/scripts/*')
+     .pipe(gulp.dest('./dist/public/scripts'))
+})
+
+gulp.task('compile:11ty-styles', () => {
+  return gulp
+     .src('./public/styles/*')
+     .pipe(gulp.dest('./dist/public/styles'))
+})
+
+gulp.task('compile:11ty-html', () => {
+  return gulp
+     .src('./public/index.html')
      .pipe(gulp.dest('./dist/public'))
 })
 
@@ -104,3 +122,4 @@ gulp.task('copy-rest', (cb) => {
 })
 
 gulp.task('build', gulp.series('clean', 'compile:11ty', 'clean:images', 'compile:server', 'compile:images', 'copy-rest'));
+gulp.task('update-build', gulp.series('compile:11ty-html', 'compile:11ty-scripts', 'compile:11ty-styles', 'compile:server', 'copy-rest'));
