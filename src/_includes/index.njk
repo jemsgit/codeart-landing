@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="./icons/favicon.ico">
   <title>{{ title }}</title>
-  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
   <div class="bg-image"></div>
@@ -16,7 +16,7 @@
     <a href="https://codeartstore.com" class="head__logo">CodeArtStore</a>
     <nav class="head__nav">
       <a href="https://codeartstore.com/" class="head__nav-item">Блог</a>
-      <a href="https://codeartstore.com/" class="head__nav-item">Как заказать</a>
+      <a href="#order" class="head__nav-item" id="order-link">Как заказать</a>
       <a href="https://codeartstore.com/shop" class="head__nav-item">Магазин</a>
     </nav>
   </div>
@@ -95,28 +95,28 @@
     </div>
     <div class="order-info__steps" data-aos="zoom-in-down">
       <div class="order-info__step">
-        <img src="/icons/image-solid.svg" alt="" class="order-info__step-icon">
+        <img src="icons/image-solid.svg" alt="" class="order-info__step-icon">
         <div class="order-info__step-description">
           <span class="order-info__step-title">Выберите фото</span>
           <span class="order-info__step-text">Если это портрет, желательно чтобы черты лица были хорошо видны. Чем больше разрешение фотографии, тем лучше</span>
         </div>
       </div>
       <div class="order-info__step">
-        <img src="/icons/brush-solid.svg" alt="" class="order-info__step-icon">
+        <img src="icons/brush-solid.svg" alt="" class="order-info__step-icon">
         <div class="order-info__step-description">
           <span class="order-info__step-title">Выберите стиль</span>
           <span class="order-info__step-text">Ниже вы можете ознакомиться с вариантами исполнения. Если вы не знаете какой выбрать, я Вам помогу и предложу варианты</span>
         </div>
       </div>
       <div class="order-info__step">
-        <img src="/icons/file-import-solid.svg" alt="" class="order-info__step-icon">
+        <img src="icons/file-import-solid.svg" alt="" class="order-info__step-icon">
         <div class="order-info__step-description">
           <span class="order-info__step-title">Отправьте фото</span>
           <span class="order-info__step-text">А также свои пожелания по исполнению и доставке заказа. Обязательно укажите контакты для обратной связи, чтобы мы обсудили детали</span>
         </div>
       </div>
       <div class="order-info__step">
-        <img src="/icons/box-open-solid.svg" alt="" class="order-info__step-icon">
+        <img src="icons/box-open-solid.svg" alt="" class="order-info__step-icon">
         <div class="order-info__step-description">
           <span class="order-info__step-title">Получите заказ</span>
           <span class="order-info__step-text">Вы можете произвести оплту после изготовления постера. Затем я передам его вам одним из возможных способов доствки</span>
@@ -218,6 +218,7 @@
   </section>
 
   <section class="order-action">
+    <a name="order"></a>
     <div class="order-action__form-wrapper">
       <h3>Сделайте заказ</h3>
       <form class="order-action__form">
@@ -240,10 +241,11 @@
       </form>
     </div>
     <div class="order-action__info">
-      <h2>Хотите постер?</h2>
+      <h2>Хотите постер или Вам "просто спросить"?</h2>
       <p>Напишите мне в <a href="{{settings.viberLink}}">Viber</a> или <a href="{{settings.telegramLink}}">Telegram</a></p>
       <p class="order-action__split-text">или</p>
-      <p>Отправьте заявку через форму и я свяжусь с вами. Мы обсудим детали и я предложу Вам варианты исполнения. Через пару дней ваш постер будет готов</p>
+      <p>Отправьте заявку через форму и я свяжусь с вами. Мы обсудим детали и я предложу Вам варианты исполнения. Через пару дней ваш постер будет готов*.</p>
+      <p class="order-action__point">* Среднее время изготовления рисунка 2 дня. Реальный срок выполнения заказа зависит от очереди и сложности исполнения.</span>
 
     </div>
   </section>
@@ -270,5 +272,8 @@
 </div>
 <div class="notification"></div>
 <script type="module" src="scripts/index.js"></script>
+<script type="text/javascript">
+    document.head.innerHTML = document.head.innerHTML + "<base href='" + document.location.href + "' />";
+</script>
 </body>
 </html>

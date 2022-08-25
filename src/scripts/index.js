@@ -5,6 +5,7 @@ import { findVideos } from './video-block';
 import FormManager from './form';
 
 const priceListSelector = '.price__list';
+const MenuOrderLinkSelector = '#order-link';
 const formSelector = '.order-action';
 const stylesFormSelector = '#styles-form';
 let galleryId = 'style-gallery';
@@ -29,7 +30,18 @@ function attachPriceEvents() {
     priceListEl.addEventListener('click', scrollToForm);
 }
 
-AOS.init({once: true});
+function attachMenuOrderEvent() {
+  let oderLink = document.querySelector(MenuOrderLinkSelector);
+  oderLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    scrollToForm(e)
+  });
+}
+
+document.addEventListener('DOMContentLoaded',(e)=>{
+  AOS.init({once: true})
+})
+
 
 const slider = new GallerySlider(galleryId);
 const formManager = new FormManager();
@@ -37,4 +49,5 @@ slider.attachEvents();
 formManager.attachEvents();
 attachStylesEvents();
 attachPriceEvents();
+attachMenuOrderEvent();
 findVideos();

@@ -1,5 +1,7 @@
 public/
+dist/
 node_modules/
 src/images/gallery
 uploads/
 .env
+.DS_Store

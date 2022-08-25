@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <canvas id="canvas"  width =800 height=800></canvas>
+  <script defer>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    let height = 600;
+    let width = 600;
+
+    function one() {
+
+      let size = 20;
+      
+      for(let x = 0; x < width; x+=size) {
+        for(let y = 0; y < height; y+=size) {
+          if(Math.random() > 0.5){
+            ctx.beginPath();
+            ctx.strokeStyle = "blue";
+            ctx.moveTo(x, y); // рисуем слева направо
+            ctx.lineTo(x+size, y+size); 
+          } else {
+            ctx.beginPath();
+            ctx.strokeStyle = "red";
+            ctx.moveTo(x+size, y); // рисуем справа налево
+            ctx.lineTo(x, y+size);
+          }
+          ctx.stroke(); //заполняем цветом
+        }
+        
+      }
+    }
+
+    function two() {
+
+      let step = 20;
+      let lines = [];
+
+      for(let i = step + 50; i <= height - step; i += step) {
+          let line = [];
+          for(let j = step; j <= width - step; j+= step) {
+            let distanceToCenter = Math.abs(j - width / 2); // определим дистанцию до центра
+            var variance = Math.max(width / 2 - 100 - distanceToCenter, 0); // ограничиваем разброс значений от центра до некоторой величины
+            var random = Math.random() * variance / 2 * -1; // вычисляем случайную величину
+            var point = {x: j, y: i + random};
+            line.push(point); // создаем набор точек по коротым будем рисовать отрезки
+          } 
+          lines.push(line); //добвляем отрезки в массив
+      }
+
+      for(let i = 0; i < lines.length; i++) {
+
+        ctx.beginPath();
+        ctx.moveTo(lines[i][0].x, lines[i][0].y); // рисуем первую точку
+
+        for(var j = 0; j < lines[i].length - 2; j++) {
+          //вычиляем дополнительные контрольные точки для кривой Бизье
+          let xc = (lines[i][j].x + lines[i][j + 1].x) / 2; 
+          let yc = (lines[i][j].y + lines[i][j + 1].y) / 2;
+          ctx.quadraticCurveTo(lines[i][j].x, lines[i][j].y, xc, yc);
+        }
+        //добавляем последнюю точку
+        ctx.quadraticCurveTo(lines[i][j].x, lines[i][j].y, lines[i][j + 1].x, lines[i][j + 1].y);
+
+        // немного трюков для перекрытия линий
+        ctx.save();
+        ctx.globalCompositeOperation = 'destination-out';
+        ctx.fill();
+        ctx.restore();
+        ctx.stroke();
+      }
+    }
+
+    one();
+
+
+
+    
+  </script>
+</body>
+</html>

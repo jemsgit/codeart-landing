@@ -18,7 +18,6 @@ export default class GallerySlider {
   }
 
   handleKey = (e) => {
-    console.log(e)
     if(this.modalEl.style.display === 'none') {
       return;
     }
@@ -79,7 +78,7 @@ export default class GallerySlider {
   }
 
   nextSlide = () => {
-    this.slideIndex = (this.slideIndex + 1) % (this.imageList.length - 1);
+    this.slideIndex = (this.slideIndex + 1) % this.imageList.length;
     let prev = document.querySelector('.slides .slide-item:first-child');
     let currentSlide = document.querySelector('.slides .slide-item.active');
     let nextSlide = document.querySelector('.slides .slide-item.active + .slide-item');
@@ -90,7 +89,7 @@ export default class GallerySlider {
   }
 
   pasteNextSlide = (nextIndexToPaste) => {
-    let index = nextIndexToPaste % (this.imageList.length - 1);
+    let index = nextIndexToPaste % this.imageList.length;
     let slidesContainer = document.querySelector('.slides');
     let newImage = this.imageList[index];
     let div = document.createElement('div');
@@ -183,13 +182,17 @@ export default class GallerySlider {
     closeButton.removeEventListener('click', this.closeModal);
   }
 
-  initImages() {
-    let images = document.querySelectorAll(`#${this.galleryId} img`);
-    this.imageList = Array.prototype.map.call(images, (item) => item.getAttribute('data-l-src'))
+  initImages(images) {
+    if(!images) {
+      let images = document.querySelectorAll(`#${this.galleryId} img`);
+      this.imageList = Array.prototype.map.call(images, (item) => item.getAttribute('data-l-src'));
+      return;
+    }
+    this.imageList = images.map(item => item.l);
   }
 
   updateSliderContent(images) {
-    this.initImages();
+    this.initImages(images);
     this.updatePreview(images);
   }
 

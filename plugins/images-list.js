@@ -8,7 +8,8 @@ module.exports = function(opt) {
    * @this {Transform}
    */
 
-  let images = [];
+  let images = opt.template || [];
+  images.forEach(item => item.images = []);
   var transform = function(file, encoding, callback) {
     let src_l = path.relative(opt.root, path.relative(file.cwd, file.path));
     let src_sm = path.relative(opt.root, path.relative(file.cwd, file.path)).replace(file.basename, 'sm/') +  file.basename;

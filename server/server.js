@@ -33,12 +33,14 @@ app.use(cors());
 app.use(express.static('public'));
 
 app.post('/order', upload.single('file'), async (req, res) => {
+  const file = req.file;
   try{
-    const file = req.file;
-    if(!file || !req.body || req.body.email) {
+    console.log(file);
+    if(!file || !req.body || !req.body.email) {
       sendBadRequest(res);
       return;
     }
+    console.log(allowedMimes.includes(file.mimetype));
     if(!allowedMimes.includes(file.mimetype)){
       sendBadRequest(res);
       return;
@@ -46,14 +48,17 @@ app.post('/order', upload.single('file'), async (req, res) => {
     const caption = getCaption(req.body);
     const buffer = fs.readFileSync(file.path);
     await bot.sendPhoto(chatId, buffer, { caption });
-    fs.unlink(file.path, (e) => {
-      console.log(`cant delete file ${file.path}`);
-    })
     console.log('success');
   } catch(e) {
     console.log(e);
     sendBadRequest(res);
-    return;
+  } finally {
+    if(file){
+      fs.unlink(file.path, (e) => {
+        console.log(`cant delete file ${file.path}`);
+        console.log(e)
+      })
+    }
   }
   res.end('Ok');
 })

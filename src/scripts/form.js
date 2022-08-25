@@ -49,6 +49,9 @@ function validateFields() {
 
 function attachFileInputEvents() {
   fileInput.addEventListener('change', (e) => {
+    if(!e.target.files || !e.target.files.length) {
+      return;
+    }
     setFileLabelText(e.target.files[0].name)
   });
 }
@@ -75,26 +78,34 @@ function attachDragEvents(el) {
   })
 }
 
+function clearFileLabel() {
+  let fileUploaded = document.querySelector(uploadedFileSelector);
+  fileUploaded.innerText = "Перетащите или выберите фото";
+}
+
 function attachSubmitEvent() {
   let submitButton = document.querySelector(formButtonSelector);
   submitButton.addEventListener('click', async (e) => {
     e.preventDefault();
     let errors = validateFields();
     if(errors.length) {
-      console.log(errors);
       setValidationErrors(errors);
     } else {
-      let res = await fetch('http://localhost:3001/order', 
+      submitButton.setAttribute('disabled', 'disabled');
+      let res = await fetch('order', 
         {
           method: 'post',
           body: new FormData(form)
         })
       if(!res.ok) {
         showNotification('error', 'Упс, что-то пошло не так. Попробуйте еще раз');
+        submitButton.removeAttribute('disabled');
         return;
       } 
       showNotification('ok', 'Ваша заявка отправлена');
       form.reset();
+      clearFileLabel();
+      submitButton.removeAttribute('disabled');
     }
   })
 }

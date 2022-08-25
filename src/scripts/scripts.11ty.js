@@ -19,7 +19,7 @@ module.exports = class {
     await esbuild.build({
       entryPoints: ['src/scripts/index.js'],
       bundle: true,
-      minify: false,
+      minify: isProduction,
       outdir: 'public/scripts',
       sourcemap: !isProduction,
       target: isProduction ? 'es6' : 'esnext'
