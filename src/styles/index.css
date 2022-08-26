@@ -214,7 +214,6 @@ body > section {
 .order-info__step-icon {
   width: 3rem;
   margin-right: 2rem;
-  height: fit-content;
 }
 
 .order-info__step-description {
@@ -803,5 +802,11 @@ img.hover-shadow {
 
   .main-info__content {
     width: 100%;
+  }
+
+  .styles,
+  .order-action__info,
+  .order-action__form-wrapper {
+    padding: 1rem;
   }
 }

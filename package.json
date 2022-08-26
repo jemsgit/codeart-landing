@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "cross-env NODE_ENV=production gulp build",
+    "build": "cross-env NODE_ENV=production gulp update-build",
+    "build-full": "cross-env NODE_ENV=production gulp build",
     "preview": "vite preview",
     "11ty": "cross-env NODE_ENV=production eleventy",
     "start-e": "cross-env NODE_ENV=development eleventy --serve",
