@@ -6,8 +6,8 @@ const del = require('del');
 const imagemin = require('gulp-imagemin');
 
 const pageSetting = require('./src/_data/settings') 
-
 const imageList = require('./plugins/images-list');
+
 const baseDirPath = 'src/images/gallery';
 
 function getFolders(dir) {
@@ -64,25 +64,7 @@ gulp.task('prepare-img', gulp.series('minify-img', 'image-list'));
 
 gulp.task('compile:11ty', () => {
   return gulp
-     .src('./public/**/*')
-     .pipe(gulp.dest('./dist/public'))
-})
-
-gulp.task('compile:11ty-scripts', () => {
-  return gulp
-     .src('./public/scripts/*')
-     .pipe(gulp.dest('./dist/public/scripts'))
-})
-
-gulp.task('compile:11ty-styles', () => {
-  return gulp
-     .src('./public/styles/*')
-     .pipe(gulp.dest('./dist/public/styles'))
-})
-
-gulp.task('compile:11ty-html', () => {
-  return gulp
-     .src('./public/index.html')
+     .src(['./public/**/*', '!./public/images/**/*'])
      .pipe(gulp.dest('./dist/public'))
 })
 
@@ -92,10 +74,6 @@ gulp.task('compile:server', (cb) => {
     .pipe(gulp.dest('./dist/server'))
 
 })
-
-gulp.task('clean:images', function(cb){
-  return del('./dist/public/images', {force:true});
-});
 
 gulp.task('compile:images', (cb) => {
   return gulp
@@ -121,5 +99,5 @@ gulp.task('copy-rest', (cb) => {
   cb()
 })
 
-gulp.task('build', gulp.series('clean', 'compile:11ty', 'clean:images', 'compile:server', 'compile:images', 'copy-rest'));
-gulp.task('update-build', gulp.series('compile:11ty-html', 'compile:11ty-scripts', 'compile:11ty-styles', 'compile:server', 'copy-rest'));
+gulp.task('build', gulp.series('clean', 'compile:11ty', 'compile:server', 'compile:images', 'copy-rest'));
+gulp.task('update-build', gulp.series('compile:11ty', 'compile:server', 'copy-rest'));

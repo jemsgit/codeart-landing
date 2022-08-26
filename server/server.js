@@ -8,7 +8,7 @@ const TelegramBot = require('node-telegram-bot-api');
 require('dotenv').config();
 
 const allowedMimes = ['image/bmp', 'image/jpeg', 'image/jpg', 'image/png', 'image/bmp'];
-
+const maxFileSizeBytes = 15000000;
 const tgToken = process.env.TGTOKEN;
 const chatId = process.env.chatId;
 
@@ -42,6 +42,10 @@ app.post('/order', upload.single('file'), async (req, res) => {
     }
     console.log(allowedMimes.includes(file.mimetype));
     if(!allowedMimes.includes(file.mimetype)){
+      sendBadRequest(res);
+      return;
+    }
+    if(file.size > maxFileSizeBytes) {
       sendBadRequest(res);
       return;
     }
