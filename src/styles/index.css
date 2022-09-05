@@ -209,6 +209,7 @@ body > section {
   display: flex;
   flex-direction: row;
   margin: 0 0.3rem 1rem;
+  align-items: flex-start;
 }
 
 .order-info__step-icon {
