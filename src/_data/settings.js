@@ -1287,5 +1287,8 @@ module.exports = {
   telegramLink: 'https://t.me/jem_jem',
   embedVideoId: 'mYxU8DDrlTk',
   youtubeImgSrc: 'https://i.ytimg.com/vi/mYxU8DDrlTk/hqdefault.jpg', 
-  youtubeImgSrcWebp: 'https://i.ytimg.com/vi_webp/mYxU8DDrlTk/hqdefault.webp', 
+  youtubeImgSrcWebp: 'https://i.ytimg.com/vi_webp/mYxU8DDrlTk/hqdefault.webp',
+  priceA4: 1900,
+  priceA3: 3200,
+  priceA2: 4900
 }
