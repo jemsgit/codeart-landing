@@ -1,13 +1,19 @@
 # Landing for codeartstore
 
-Запустить разработку
+11ty based project for simple landing page
+
+## Development
+
 `npm run start-e`
 
-Сбилдить production версию с оптимизированными картинками
+Build production version with optimized image
+
 `npm run build-full`
 
-Обновить билд (без сборки картинок)
+Update build (no image processing)
+
 `npm run build`
 
-Подготовить список изображений на основе тех, что лежат в папках
+Prepage image list based on filed in folders
+
 `gulp prepare-img`
